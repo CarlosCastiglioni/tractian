@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tractian/app_router.dart';
+import 'package:tractian/styles/app_colors.dart';
 import 'package:tractian/themes/app_appbar_theme.dart';
 
 class App extends StatelessWidget {
@@ -9,6 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.white,
         appBarTheme: const AppAppbarTheme(),
       ),
       title: "tractian",

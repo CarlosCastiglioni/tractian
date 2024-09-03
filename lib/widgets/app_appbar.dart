@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tractian/styles/app_images.dart';
+import 'package:tractian/styles/app_text_styles.dart';
 
 class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
@@ -11,7 +12,13 @@ class AppAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(title: title != null ? Text(title!) : Image.asset(AppImages.logo));
+    return AppBar(
+        title: title != null
+            ? Text(
+                title!,
+                style: AppTextStyles.appBar,
+              )
+            : Image.asset(AppImages.logo));
   }
 
   @override
