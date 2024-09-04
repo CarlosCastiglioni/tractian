@@ -8,7 +8,7 @@ The Asset Tree View Application is a Flutter-based project designed to visualize
 
 Watch the demo video below:
 
-![Demo Video](assets/presentation.mp4)
+![Demo Video](lib/assets/presentation.mp4)
 
 ## Features
 
