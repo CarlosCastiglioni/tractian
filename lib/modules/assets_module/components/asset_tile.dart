@@ -24,7 +24,7 @@ class _AssetTileState extends State<AssetTile> {
       child: ExpansionTile(
         tilePadding: EdgeInsets.zero,
         title: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (widget.asset.sensorType == null)
               Icon(
@@ -34,12 +34,15 @@ class _AssetTileState extends State<AssetTile> {
             Image.asset(
                 widget.asset.sensorType == null ? AppImages.asset : AppImages.component),
             const SizedBox(width: 10),
-            Expanded(
+            Flexible(
               child: Text(
                 widget.asset.name.toUpperCase(),
                 softWrap: true,
               ),
             ),
+            const SizedBox(width: 5),
+            if (widget.asset.sensorType == 'energy') Image.asset(AppImages.bolt),
+            if (widget.asset.status == 'critical') Image.asset(AppImages.bolt),
           ],
         ),
         trailing: const SizedBox.shrink(),

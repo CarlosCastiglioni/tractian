@@ -15,4 +15,16 @@ class AppTextStyles {
     color: AppColors.white,
     fontFamily: 'Roboto',
   );
+  static const filterButtonWhite = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
+    fontFamily: 'Roboto',
+  );
+  static const filterButtonGrey = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.grey,
+    fontFamily: 'Roboto',
+  );
 }

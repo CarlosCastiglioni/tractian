@@ -28,4 +28,10 @@ flutter:
     - lib/assets/asset.png
     - lib/assets/component.png
     - lib/assets/location.png
+    - lib/assets/bolt.png
+    - lib/assets/ellipse.png
+    - lib/assets/critical.png
+    - lib/assets/boltlight.png
+    - lib/assets/boltdark.png
+    - lib/assets/criticallight.png
  

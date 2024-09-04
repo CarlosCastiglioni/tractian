@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tractian/modules/assets_module/assets_controller.dart';
+import 'package:tractian/modules/assets_module/components/assets_filters.dart';
 import 'package:tractian/modules/assets_module/components/locations_list.dart';
 import 'package:tractian/widgets/app_appbar.dart';
 
@@ -30,8 +31,11 @@ class _AssetsPageState extends State<AssetsPage> {
       appBar: AppAppbar(
         title: 'Assets',
       ),
-      body: Column(
-        children: [LocationsList()],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [AssetsFilters(), LocationsList()],
+        ),
       ),
     );
   }
