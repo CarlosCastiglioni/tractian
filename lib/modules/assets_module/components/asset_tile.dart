@@ -22,6 +22,7 @@ class _AssetTileState extends State<AssetTile> {
     return Theme(
       data: Theme.of(context).copyWith(dividerColor: AppColors.transparent),
       child: ExpansionTile(
+        minTileHeight: 0,
         tilePadding: EdgeInsets.zero,
         title: Row(
           crossAxisAlignment: CrossAxisAlignment.center,

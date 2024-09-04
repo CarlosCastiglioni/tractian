@@ -22,8 +22,11 @@ class _LocationTileState extends State<LocationTile> {
   Widget build(BuildContext context) {
     final assetsController = Provider.of<AssetsController>(context);
     return Theme(
-      data: Theme.of(context).copyWith(dividerColor: AppColors.transparent),
+      data: Theme.of(context).copyWith(
+        dividerColor: AppColors.transparent,
+      ),
       child: ExpansionTile(
+        minTileHeight: 0,
         tilePadding: EdgeInsets.zero,
         title: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
