@@ -43,10 +43,6 @@ The application interacts with a demo API to fetch data:
 
 API Base URL: `https://fake-api.tractian.com`
 
-## Design
-
-While the application does not strictly adhere to the Figma design, it focuses on providing a user-friendly experience that effectively represents the asset hierarchy.
-
 ## Installation
 
 1. **Clone the Repository:**
