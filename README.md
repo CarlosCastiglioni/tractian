@@ -10,6 +10,12 @@ Watch the demo video below:
 
 https://github.com/user-attachments/assets/5c831b9d-6f16-491d-a7c4-b9db03f24171
 
+### Points to improve
+- **Components:** Break components into smaller parts to make testing easier;
+- **Tests:** Finalize test implementation;
+- **Themes :** Work on themes for the rest of the widgets to standardize the project;
+- **Assets Controller :** Work with assets/locations division in controller instead of organizing in the lists for better performance.
+
 ## Features
 
 ### Home Page
