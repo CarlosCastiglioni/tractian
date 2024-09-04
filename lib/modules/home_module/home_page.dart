@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tractian/modules/home_module/widgets/companies_list.dart';
+import 'package:tractian/modules/home_module/components/companies_list.dart';
 import 'package:tractian/widgets/app_appbar.dart';
 
 class HomePage extends StatelessWidget {

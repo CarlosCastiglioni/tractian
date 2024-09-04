@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tractian/models/company.dart';
 import 'package:tractian/modules/home_module/home_controller.dart';
-import 'package:tractian/modules/home_module/widgets/company_box.dart';
+import 'package:tractian/modules/home_module/components/company_box.dart';
 
 class CompaniesList extends StatefulWidget {
   const CompaniesList({super.key});
