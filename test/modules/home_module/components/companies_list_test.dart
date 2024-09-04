@@ -15,7 +15,6 @@ class FakeHomeController extends HomeController {
 
   @override
   Future<void> getAllCompanies() async {
-    // Returning an empty Future to mock the asynchronous behavior
     return Future.value();
   }
 }
