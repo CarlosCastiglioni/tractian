@@ -3,9 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:tractian/models/company.dart';
 import 'package:tractian/modules/home_module/home_controller.dart';
 import 'package:tractian/modules/home_module/widgets/company_box.dart';
-import 'package:tractian/styles/app_colors.dart';
-import 'package:tractian/styles/app_images.dart';
-import 'package:tractian/styles/app_text_styles.dart';
 
 class CompaniesList extends StatefulWidget {
   const CompaniesList({super.key});

@@ -5,7 +5,7 @@ import 'package:tractian/styles/app_text_styles.dart';
 class AppAppbarTheme extends AppBarTheme {
   const AppAppbarTheme()
       : super(
-            iconTheme: const IconThemeData(size: 20),
+            iconTheme: const IconThemeData(size: 20, color: AppColors.white),
             backgroundColor: AppColors.darkBlue,
             titleTextStyle: AppTextStyles.appBar,
             centerTitle: true,

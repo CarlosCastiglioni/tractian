@@ -25,7 +25,7 @@ flutter:
   assets:
     - lib/assets/logo.png
     - lib/assets/company.png
+    - lib/assets/asset.png
     - lib/assets/component.png
-    - lib/assets/subcomponent.png
     - lib/assets/location.png
  

@@ -1,4 +1,6 @@
+import 'package:tractian/models/asset.dart';
 import 'package:tractian/models/company.dart';
+import 'package:tractian/models/location.dart';
 import 'package:tractian/repositories/app_handler.dart';
 import 'package:tractian/repositories/app_routes.dart';
 
@@ -13,10 +15,23 @@ class AssetsRepository {
     return companies;
   }
 
-  Future getCompanyLocations() async {
+  Future getCompanyLocations(String companyId) async {
     final response = await AppHandler(
-      urlPath: AppRoutes.getCompanyLocations,
+      urlPath: '${AppRoutes.getAllCompanies}/$companyId/locations',
     ).get();
-    return response;
+    List<Location> locations = List<Location>.from(
+      response.map((itemJson) => Location.fromJson(itemJson)),
+    );
+    return locations;
+  }
+
+  Future getCompanyAssets(String companyId) async {
+    final response = await AppHandler(
+      urlPath: '${AppRoutes.getAllCompanies}/$companyId/assets',
+    ).get();
+    List<Asset> assets = List<Asset>.from(
+      response.map((itemJson) => Asset.fromJson(itemJson)),
+    );
+    return assets;
   }
 }
