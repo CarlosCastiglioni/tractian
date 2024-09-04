@@ -4,6 +4,12 @@
 
 The Asset Tree View Application is a Flutter-based project designed to visualize a company's asset hierarchy through a dynamic tree structure. The application allows users to view and manage assets, components, and locations, providing essential insights for asset management and maintenance.
 
+## Demo
+
+Watch the demo video below:
+
+![Demo Video](assets/presentation.mp4)
+
 ## Features
 
 ### Home Page
